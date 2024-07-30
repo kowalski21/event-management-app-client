@@ -43,7 +43,7 @@ const EventOrderForm = ({ tickets, item }) => {
         <div className="card-title fw-bolder">Ticket Ordering Form</div>
       </div>
       <div className="card-body">
-        {JSON.stringify({ cart })}
+        {/* {JSON.stringify({ cart })} */}
         <div className="table-responsive">
           <table className="table">
             <thead>
@@ -54,24 +54,26 @@ const EventOrderForm = ({ tickets, item }) => {
               </tr>
             </thead>
             <tbody>
-              {tickets.map((ticket) => {
-                return (
-                  <tr key={ticket.id}>
-                    <td>{ticket.name}</td>
-                    <td>{ticket.price > 0 ? ticket.price : "Free"}</td>
-                    <td>
-                      {/* {ticket.qty} */}
-                      <Input
-                        onChange={(val) => updateCart(ticket.id, val)}
-                        style={{ width: "70px" }}
-                        min={0}
-                        max={ticket.qty - ticket._qty}
-                        type="number"
-                      />
-                    </td>
-                  </tr>
-                );
-              })}
+              {tickets
+                .filter((ticket) => ticket.status === "published")
+                .map((ticket) => {
+                  return (
+                    <tr key={ticket.id}>
+                      <td>{ticket.name}</td>
+                      <td>{ticket.price > 0 ? ticket.price : "Free"}</td>
+                      <td>
+                        {/* {ticket.qty} */}
+                        <Input
+                          onChange={(val) => updateCart(ticket.id, val)}
+                          style={{ width: "70px" }}
+                          min={0}
+                          max={ticket.qty - ticket._qty}
+                          type="number"
+                        />
+                      </td>
+                    </tr>
+                  );
+                })}
             </tbody>
           </table>
         </div>

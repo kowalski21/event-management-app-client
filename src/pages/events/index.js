@@ -11,7 +11,7 @@ const EventsPage = () => {
   const [form, setForm] = useState({ name: "", category: "", dt: getWeekDate() });
   const [query, setQuery] = useState({
     fields: "*,category.id,category.name",
-    filter: { status: { _in: "published" } },
+    filter: { status: { _in: ["published"] } },
   });
   const { data, isLoading } = useEventList(["EventsSearch", query], query, { keepPreviousData: true });
   const handleForm = (keyName, value) => {
@@ -40,6 +40,7 @@ const EventsPage = () => {
         },
       });
     }
+    payload.push({ status: { _in: ["published"] } });
 
     oldQuery.filter = { _and: payload };
 
