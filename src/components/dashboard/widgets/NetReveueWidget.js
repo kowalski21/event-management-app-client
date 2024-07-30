@@ -21,7 +21,7 @@ const NetReveueWidget = ({ eventId }) => {
         </span>
 
         <div className="text-gray-900 fw-bolder fs-2 mb-2 mt-5">
-          {Number(Number(data.data[0].sum.total_amount) * 0.97).toFixed(2)} GHS
+          {Number(Number(data?.data[0]?.sum?.total_amount) * 0.97).toFixed(2)} GHS
         </div>
         <div className="fw-bolder text-gray-800">Net Revenue </div>
       </div>

@@ -9,7 +9,10 @@ import { useEventList } from "@/hooks/eventz";
 import { formatJSDate, getWeekDate } from "@/lib/date";
 const EventsPage = () => {
   const [form, setForm] = useState({ name: "", category: "", dt: getWeekDate() });
-  const [query, setQuery] = useState({ fields: "*,category.id,category.name" });
+  const [query, setQuery] = useState({
+    fields: "*,category.id,category.name",
+    filter: { status: { _in: "published" } },
+  });
   const { data, isLoading } = useEventList(["EventsSearch", query], query, { keepPreviousData: true });
   const handleForm = (keyName, value) => {
     setForm({ ...form, [keyName]: value });

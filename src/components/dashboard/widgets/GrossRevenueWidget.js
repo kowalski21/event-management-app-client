@@ -22,7 +22,9 @@ const GrossRevenueWidget = ({ eventId }) => {
 
         {/* {JSON.stringify({ info: data })} */}
 
-        <div className="text-gray-900 fw-bolder fs-2 mb-2 mt-5">{data.data[0].sum.total_amount} GHS</div>
+        {/* {data && data?.data ? } */}
+
+        <div className="text-gray-900 fw-bolder fs-2 mb-2 mt-5">{data?.data[0]?.sum?.total_amount || 0} GHS</div>
         <div className="fw-bolder text-gray-800">Gross Revenue</div>
       </div>
     </div>

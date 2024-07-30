@@ -24,7 +24,9 @@ const TicketsSoldWidget = ({ eventId }) => {
 
           {/* {JSON.stringify({ info: data })} */}
 
-          <div className="text-gray-900 fw-bolder fs-2 mb-2 mt-5">{data.data[0].sum._qty}</div>
+          {/* {data && data?.data} */}
+
+          <div className="text-gray-900 fw-bolder fs-2 mb-2 mt-5">{data.data[0].sum._qty || 0}</div>
           <div className="fw-bolder text-gray-800">Tickets Sold</div>
         </div>
       )}
