@@ -1,0 +1,36 @@
+@import 'rsuite/dist/rsuite.min.css';
+@import "./style.bundle.css";
+@import "./plugins.bundle.css";
+
+
+*{
+  /* font-family:'Lexend' ; */
+  font-family: 'Circular Std';
+
+}
+/* transform: translate3d(-110.5px, 45px, 0px); */
+.avatar__menu {
+  z-index: 107;
+  position: fixed;
+  inset: 0px 0px auto auto;
+  margin: 0px;
+  transform: translate3d(-30.5px, 70px, 0px);
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+
+  @keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+}
+
+
+.img-center {
+  object-fit: cover;
+}
