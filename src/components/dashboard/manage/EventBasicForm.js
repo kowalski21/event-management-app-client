@@ -3,7 +3,7 @@ import SelectStatus from "@/components/forms/SelectStatus";
 import { useForm } from "@/hooks/form";
 import { useNotify } from "@/hooks/notify";
 import { directus } from "@/lib";
-import React from "react";
+import React, { useState } from "react";
 import { FormLabel } from "react-bootstrap";
 import { useMutation } from "react-query";
 import { InputPicker, Input, Button } from "rsuite";
@@ -16,8 +16,15 @@ const EventBasicForm = ({ item }) => {
     status: item.status,
     description: item.description,
   });
+  const [file, setFile] = useState(null);
   const mutation = useMutation({
     mutationFn: async (payload) => {
+      if (file) {
+        let formData = new FormData();
+        formData.append("file", file);
+        const _res = await directus.files.createOne(formData);
+        payload.thumbnail = _res.id;
+      }
       const res = await directus.items("eventz").updateOne(item.id, payload);
       return res;
     },
@@ -58,7 +65,7 @@ const EventBasicForm = ({ item }) => {
           </div>
           <div className="col-md-12">
             <FormLabel>Upload Image</FormLabel>
-            <input type="file" className="form-control" />
+            <input type="file" onChange={(e) => setFile(e.target.files[0])} className="form-control" />
           </div>
         </div>
       </div>

@@ -79,11 +79,11 @@ const AvatarMenu = () => {
 
         <div className="separator my-2"></div>
 
-        <div className="menu-item px-5 my-1">
+        {/* <div className="menu-item px-5 my-1">
           <a href="#" className="menu-link px-5">
             Account Settings
           </a>
-        </div>
+        </div> */}
 
         <div className="menu-item px-5">
           <a onClick={handleLogout} className="menu-link px-5">

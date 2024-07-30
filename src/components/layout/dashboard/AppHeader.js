@@ -3,7 +3,7 @@ import { BarChart2, Layers3, LayoutGrid } from "lucide-react";
 import React from "react";
 import AppMenuDrawer from "./AppMenuDrawer";
 import Link from "next/link";
-const AppHeader = () => {
+const AppHeader = ({ user }) => {
   return (
     <div className="" style={{ minHeight: "100px", backgroundColor: "#0A0A0A" }}>
       <div className="container align-items-center pt-10 d-flex flex-grow-1 flex-stack">
@@ -15,7 +15,7 @@ const AppHeader = () => {
         </Link>
 
         <div className="topbar d-flex align-items-stretch flex-shrink-0">
-          <AppMenuDrawer />
+          {["Administrator"].includes(user.role?.name) && <AppMenuDrawer />}
           <AvatarMenu />
         </div>
       </div>

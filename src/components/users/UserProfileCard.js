@@ -43,7 +43,7 @@ const UserProfileCard = ({ userId }) => {
                   </a>
                 </Link>
               </li>
-              <li className="nav-item mt-5">
+              {/* <li className="nav-item mt-5">
                 <Link href={`/dashboard/profile/${user.id}/hostels`} legacyBehavior>
                   <a className="nav-link text-muted text-active-dark ms-0 py-0 me-10 ps-9 border-0 cursor-pointer active">
                     <Layers3 className="text-dark me-2" size={20} />
@@ -53,13 +53,13 @@ const UserProfileCard = ({ userId }) => {
                     )}
                   </a>
                 </Link>
-              </li>
+              </li> */}
 
-              <UserLinkItem
+              {/* <UserLinkItem
                 icon={<LayoutDashboard className="text-dark  me-2" size={20} />}
                 title={`Room Requests`}
                 url={`/dashboard/profile/${user.id}/room_request`}
-              />
+              /> */}
             </ul>
           </div>
         </div>

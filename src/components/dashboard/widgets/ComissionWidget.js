@@ -14,8 +14,10 @@ const ComissionWidget = () => {
           </svg>
         </span>
 
-        <div className="text-gray-900 fw-bolder fs-2 mb-2 mt-5">500M$</div>
-        <div className="fw-bolder text-gray-800">Tickets Sold</div>
+        <div className="text-gray-900 fw-bolder fs-2 mb-2 mt-5">3%</div>
+        <div className="fw-bolder text-gray-800">
+          Commission <span className="fs-9 text-muted">(for payment gateway charges)</span>
+        </div>
       </div>
     </a>
   );

@@ -6,16 +6,16 @@ export const menuList = [
     title: "Home",
     icon: <LayoutGrid className="text-white mb-5 mt-5" size={30} />,
   },
-  {
-    to: "/dashboard/hostels",
-    title: "Hostels",
-    icon: <Landmark className="text-white mb-5 mt-5" size={30} />,
-  },
-  {
-    to: "/dashboard/room_request",
-    title: "Room Requests",
-    icon: <Droplets className="text-white mb-5 mt-5" size={30} />,
-  },
+  // {
+  //   to: "/dashboard/hostels",
+  //   title: "Hostels",
+  //   icon: <Landmark className="text-white mb-5 mt-5" size={30} />,
+  // },
+  // {
+  //   to: "/dashboard/room_request",
+  //   title: "Room Requests",
+  //   icon: <Droplets className="text-white mb-5 mt-5" size={30} />,
+  // },
   {
     to: "/dashboard/settings/users",
     title: "Users",

@@ -13,7 +13,7 @@ const AppLayout = ({ children, id }) => {
 
       {data && (
         <div>
-          <AppHeader />
+          <AppHeader user={data} />
           <div className="container mt-5">
             <div className="row mb-5">
               <div className="col">

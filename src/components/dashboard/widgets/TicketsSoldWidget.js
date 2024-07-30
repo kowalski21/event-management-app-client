@@ -3,7 +3,7 @@ import React from "react";
 import { Loader } from "rsuite";
 
 const TicketsSoldWidget = ({ eventId }) => {
-  const query = { fields: "*", filter: { eventz: eventId }, aggregate: { count: "*" } };
+  const query = { fields: "*", filter: { eventz: eventId }, aggregate: { sum: ["_qty"] } };
   // const { data, isLoading } = useEventDetail(eventId, ["MyEventsDetails", eventId, query], query);
 
   const { data, isLoading } = useEventTickets(["TotalTicketsWidget", eventId, query], query);
@@ -22,7 +22,9 @@ const TicketsSoldWidget = ({ eventId }) => {
             </svg>
           </span>
 
-          <div className="text-gray-900 fw-bolder fs-2 mb-2 mt-5">700</div>
+          {/* {JSON.stringify({ info: data })} */}
+
+          <div className="text-gray-900 fw-bolder fs-2 mb-2 mt-5">{data.data[0].sum._qty}</div>
           <div className="fw-bolder text-gray-800">Tickets Sold</div>
         </div>
       )}
