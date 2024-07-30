@@ -42,10 +42,10 @@ const LoginForm = () => {
       <form className="form w-100" novalidate="novalidate">
         <div className="card-body">
           <div className="text-start mb-10">
-            <h1 className="text-gray-900 mb-3 fs-3x">Hostel Finder App</h1>
+            <h1 className="text-gray-900 mb-3 fs-3x">Event Management App</h1>
 
             <div className="text-gray-500 fw-semibold fs-6" data-kt-translate="general-desc">
-              Book A Hostel with simplicity and ease
+              Event Management and Ticket has never been easier
             </div>
             <div className="text-gray-800 mt-2 fw-bolder fs-6" data-kt-translate="general-desc">
               Sign In to get started

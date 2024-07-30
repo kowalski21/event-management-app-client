@@ -2,8 +2,8 @@ Event Management and Ticketing Api
 ## Getting Started
 
 ### Login using the following credentials
-email - poki@gmail.com
-password - loki
+1. email - poki@gmail.com
+2. password - loki
 
 First, run the development server:
 
