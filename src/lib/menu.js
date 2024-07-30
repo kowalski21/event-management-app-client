@@ -1,10 +1,15 @@
-import { Grid, LayoutGrid, Landmark, Droplets, Users } from "lucide-react";
+import { Grid, LayoutGrid, Landmark, Droplets, Users, ArchiveRestore } from "lucide-react";
 
 export const menuList = [
   {
     to: "/",
     title: "Home",
     icon: <LayoutGrid className="text-white mb-5 mt-5" size={30} />,
+  },
+  {
+    to: "/dashboard/settings/categories",
+    title: "Event Categories",
+    icon: <ArchiveRestore className="text-white mb-5 mt-5" size={30} />,
   },
   // {
   //   to: "/dashboard/hostels",

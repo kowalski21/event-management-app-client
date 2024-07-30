@@ -5,7 +5,10 @@ import { useEventCallback } from "usehooks-ts";
 
 const SelectCategory = ({ defaultValue, handleChange, keyName, size = "lg" }) => {
   // const [val,setVal] = useState
-  const { data, isLoading } = useEventCategories(["SelectEventCategories"], { fields: "id,name" });
+  const { data, isLoading } = useEventCategories(["SelectEventCategories"], {
+    fields: "id,name",
+    filter: { status: { _in: ["published"] } },
+  });
   return (
     <SelectPicker
       value={defaultValue}
