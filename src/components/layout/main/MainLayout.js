@@ -10,7 +10,7 @@ const MainLayout = ({ children, showHero = true }) => {
       <div className="mb-0">
         <div
           className="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom landing-dark-bg"
-          style={{ backgroundImage: "url(/media/svg/illustrations/landing.svg)" }}
+          style={{ backgroundImage: "url(/media/landing.svg)" }}
         >
           <MainHeader />
           {showHero && <MainLandingHero />}

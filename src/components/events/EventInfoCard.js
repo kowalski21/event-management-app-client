@@ -1,7 +1,7 @@
 import React from "react";
 import { Calendar, LocateFixed, MapPin } from "lucide-react";
 import { assetUrl } from "@/lib/asset";
-const imageUrl = "/media/stock/600x600/img-39.jpg";
+const imageUrl = "/media/img-44.jpg";
 const EventInfoCard = ({ item }) => {
   return (
     <div className="card " style={{ minHeight: "200px" }}>

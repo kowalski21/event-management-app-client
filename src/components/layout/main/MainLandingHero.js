@@ -33,50 +33,6 @@ const MainLandingHero = () => {
         {/*end::Action*/}
       </div>
       {/*end::Heading*/}
-      {/*begin::Clients*/}
-      <div className="d-flex flex-center flex-wrap position-relative px-5">
-        {/*begin::Client*/}
-        <div className="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Fujifilm">
-          <img src="assets/media/svg/brand-logos/fujifilm.svg" className="mh-30px mh-lg-40px" alt="" />
-        </div>
-        {/*end::Client*/}
-        {/*begin::Client*/}
-        <div className="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Vodafone">
-          <img src="/media/svg/brand-logos/vodafone.svg" className="mh-30px mh-lg-40px" alt="" />
-        </div>
-        {/*end::Client*/}
-        {/*begin::Client*/}
-        <div className="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="KPMG International">
-          <img src="/media/svg/brand-logos/kpmg.svg" className="mh-30px mh-lg-40px" alt="" />
-        </div>
-        {/*end::Client*/}
-        {/*begin::Client*/}
-        <div className="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Nasa">
-          <img src="/media/svg/brand-logos/nasa.svg" className="mh-30px mh-lg-40px" alt="" />
-        </div>
-        {/*end::Client*/}
-        {/*begin::Client*/}
-        <div className="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Aspnetzero">
-          <img src="/media/svg/brand-logos/aspnetzero.svg" className="mh-30px mh-lg-40px" alt="" />
-        </div>
-        {/*end::Client*/}
-        {/*begin::Client*/}
-        <div className="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="AON - Empower Results">
-          <img src="/media/svg/brand-logos/aon.svg" className="mh-30px mh-lg-40px" alt="" />
-        </div>
-        {/*end::Client*/}
-        {/*begin::Client*/}
-        <div className="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Hewlett-Packard">
-          <img src="/media/svg/brand-logos/hp-3.svg" className="mh-30px mh-lg-40px" alt="" />
-        </div>
-        {/*end::Client*/}
-        {/*begin::Client*/}
-        <div className="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Truman">
-          <img src="/media/svg/brand-logos/truman.svg" className="mh-30px mh-lg-40px" alt="" />
-        </div>
-        {/*end::Client*/}
-      </div>
-      {/*end::Clients*/}
     </div>
   );
 };

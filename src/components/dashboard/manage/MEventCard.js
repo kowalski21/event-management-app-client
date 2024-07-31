@@ -8,7 +8,7 @@ const MEventCard = ({ item }) => {
         <div className="card-header border-0 pt-9">
           <div className="card-title m-0">
             <div className="symbol symbol-50px w-50px bg-light">
-              <img src="/media/svg/brand-logos/disqus.svg" alt="image" className="p-3" />
+              <img src="/media/disqus.svg" alt="image" className="p-3" />
             </div>
           </div>
 
@@ -23,7 +23,7 @@ const MEventCard = ({ item }) => {
           <div className="fs-3 fw-bolder text-dark">{item.name}</div>
 
           <p className="text-gray-400 fw-bold fs-5 mt-1 mb-3">{wordSlice(item.description)}</p>
-          <span className={`badge badge-secondary fw-bolder me-auto px-4 mb-3 py-3`}>{item.category.name}</span>
+          <span className={`badge badge-secondary fw-bolder me-auto px-4 mb-3 py-3`}>{item?.category?.name}</span>
           <div className="d-flex flex-wrap mb-5">
             <div className="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-7 mb-3">
               <div className="fs-6 text-gray-800 fw-bolder">{item.start_date}</div>

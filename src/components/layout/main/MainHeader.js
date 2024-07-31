@@ -27,7 +27,7 @@ const MainHeader = () => {
             {/*begin::Logo image*/}
             <Link href={`/`} legacyBehavior>
               <a>
-                <img alt="Logo" src="/media/logos/landing.svg" className="logo-default h-25px h-lg-30px" />
+                <img alt="Logo" src="/media/landing-1.svg" className="logo-default h-25px h-lg-30px" />
               </a>
             </Link>
 

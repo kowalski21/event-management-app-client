@@ -28,7 +28,7 @@ const MainSectionOne = () => {
             {/*begin::Story*/}
             <div className="text-center mb-10 mb-md-0">
               {/*begin::Illustration*/}
-              <img src="media/illustrations/sketchy-1/2.png" className="mh-125px mb-9" alt="" />
+              <img src="media/2.png" className="mh-125px mb-9" alt="" />
               {/*end::Illustration*/}
               {/*begin::Heading*/}
               <div className="d-flex flex-center mb-5">
@@ -58,7 +58,7 @@ const MainSectionOne = () => {
             {/*begin::Story*/}
             <div className="text-center mb-10 mb-md-0">
               {/*begin::Illustration*/}
-              <img src="/media/illustrations/sketchy-1/8.png" className="mh-125px mb-9" alt="" />
+              <img src="/media/8.png" className="mh-125px mb-9" alt="" />
               {/*end::Illustration*/}
               {/*begin::Heading*/}
               <div className="d-flex flex-center mb-5">
@@ -88,7 +88,7 @@ const MainSectionOne = () => {
             {/*begin::Story*/}
             <div className="text-center mb-10 mb-md-0">
               {/*begin::Illustration*/}
-              <img src="/media/illustrations/sketchy-1/12.png" className="mh-125px mb-9" alt="" />
+              <img src="/media/12.png" className="mh-125px mb-9" alt="" />
               {/*end::Illustration*/}
               {/*begin::Heading*/}
               <div className="d-flex flex-center mb-5">

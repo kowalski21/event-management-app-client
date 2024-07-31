@@ -28,7 +28,7 @@ const LoginWrapper = ({ children }) => {
 
             <div className="m-0">
               <button className="btn btn-flex btn-link rotate">
-                <img className="w-25px h-25px rounded-circle me-3" src="/media/flags/united-states.svg" alt="" />
+                <img className="w-25px h-25px rounded-circle me-3" src="/media/united-states.svg" alt="" />
                 <span data-kt-element="current-lang-name" className="me-2">
                   English
                 </span>
@@ -39,7 +39,7 @@ const LoginWrapper = ({ children }) => {
 
         <div
           className="d-none d-lg-flex flex-lg-row-fluid w-50 bgi-size-cover bgi-position-y-center bgi-position-x-start bgi-no-repeat"
-          style={{ backgroundImage: "url(/media/auth/bg3-dark.jpg)" }}
+          style={{ backgroundImage: "url(/media/bg4-dark.jpg)" }}
         ></div>
       </div>
     </div>

@@ -2,7 +2,7 @@ import { assetUrl } from "@/lib/asset";
 import { prettyDate } from "@/lib/date";
 import React, { useState } from "react";
 import Link from "next/link";
-const imageUrl = "/media/stock/600x600/img-39.jpg";
+const imageUrl = "/media/img-44.jpg";
 const EventCard = ({ eventItem }) => {
   return (
     <Link href={`/events/${eventItem.id}`}>

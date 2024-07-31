@@ -8,7 +8,7 @@ const SignupWrapper = ({ children }) => {
     >
       <div className="d-flex flex-column flex-lg-row flex-column-fluid">
         <a href="/dashboard" className="d-block d-lg-none mx-auto py-20">
-          <h3 className="fw-bold fs-8">Hostel Finder</h3>
+          <h3 className="fw-bold fs-8">Event Management App</h3>
         </a>
 
         <div className="d-flex flex-column flex-column-fluid flex-center w-lg-50 p-10">
@@ -27,7 +27,7 @@ const SignupWrapper = ({ children }) => {
 
             <div className="m-0">
               <button className="btn btn-flex btn-link rotate">
-                <img className="w-25px h-25px rounded-circle me-3" src="/media/flags/united-states.svg" alt="" />
+                <img className="w-25px h-25px rounded-circle me-3" src="/media/united-states.svg" alt="" />
                 <span data-kt-element="current-lang-name" className="me-2">
                   English
                 </span>
@@ -38,7 +38,7 @@ const SignupWrapper = ({ children }) => {
 
         <div
           className="d-none d-lg-flex flex-lg-row-fluid w-50 bgi-size-cover bgi-position-y-center bgi-position-x-start bgi-no-repeat"
-          style={{ backgroundImage: "url(/media/auth/bg3-dark.jpg)" }}
+          style={{ backgroundImage: "url(/media/bg4-dark.jpg)" }}
         ></div>
       </div>
     </div>
