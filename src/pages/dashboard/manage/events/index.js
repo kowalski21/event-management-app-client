@@ -8,8 +8,17 @@ import { Loader } from "rsuite";
 
 const EventsMangementPage = () => {
   const [name, setName] = useState("");
-  const [query, setQuery] = useState({ fields: "*,category.id,category.name" });
+  // const [query, setQuery] = useState({ fields: "*,category.id,category.name",filter: {} });
   const user = useAuthUser();
+
+  const [query, setQuery] = useState({
+    fields: "*,category.id,category.name",
+    filter: {
+      author: {
+        _eq: user?.id,
+      },
+    },
+  });
 
   const { data, isLoading } = useEventList(["MyEvents", user?.id, query], query, {
     enabled: user ? true : false,

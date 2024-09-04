@@ -25,9 +25,15 @@ const MainHeader = () => {
             </button>
             {/*end::Mobile menu toggle*/}
             {/*begin::Logo image*/}
+            {/* style={{ backgroundImage: "url(/media/event-management.svg)" }} */}
             <Link href={`/`} legacyBehavior>
               <a>
-                <img alt="Logo" src="/media/landing-1.svg" className="logo-default h-25px h-lg-30px" />
+                <img
+                  alt="Logo"
+                  src="/media/lion.svg"
+                  style={{ background: "white", objectFit: "cover", height: "40px", borderRadius: "10px" }}
+                  className="logo-default"
+                />
               </a>
             </Link>
 
